@@ -45,10 +45,16 @@ body {
   text-align: center;
 }
 
+/* no new line for last name */
+.entrance span {
+	white-space: nowrap;
+}
+
 .entrance p {
   margin-top: 15px;
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom:  15px;
 }
 
 /* images */
@@ -250,7 +256,6 @@ body {
   color: var(--back-dark);
   display: flex;
   flex-direction: row;
-  
   align-items: center;
 }
 
@@ -338,7 +343,7 @@ body {
 
 /* Media Queries */
 
-@media(max-width: 700px) {
+@media(max-width: 750px) {
 	#level {
 		display:none;
 	}
@@ -351,6 +356,20 @@ body {
 	.entrance h1 {
 		font-size: 1.5rem;
 	}
+}
+
+@media(max-width: 550px) {
+	.entrance p, .entrance h1 {
+		font-size: 1.0rem;
+	}
+
+	.contact {
+  flex-direction: column;
+	}
+
+	.image {
+		width: 100%;
+	}	
 }
 
 
